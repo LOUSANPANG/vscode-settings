@@ -1,74 +1,142 @@
 {
-  "import": {
-    "scope": "javascript,typescript",
-    "prefix": "im",
-    "body": [
-      "import { $1 } from '$2';"
-    ],
-    "description": "Import a module"
-  },
-  "export-all": {
-    "scope": "javascript,typescript",
-    "prefix": "ex",
-    "body": [
-      "export * from '$2';"
-    ],
-    "description": "Export a module"
-  },
-  "vue-script-setup": {
+  "uniapp-vue2-template": {
     "scope": "vue",
-    "prefix": "<sc",
+    "prefix": "vue",
+    "description": "Uniapp Vue2 Template",
     "body": [
-      "<script setup lang=\"ts\">",
-      "const props = defineProps<{",
-      "  modelValue?: boolean,",
-      "}>()",
-      "$1",
+      "<template>",
+      "  <view class=\"\"></view>",
+      "</template>",
+      "",
+      "",
+      "<script>",
+      "export default {",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "",
+      "  methods: {},",
+      "}",
       "</script>",
       "",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+    ]
+  },
+  "vue2-template": {
+    "scope": "vue",
+    "prefix": "vue",
+    "description": "Vue2 Template",
+    "body": [
       "<template>",
-      "  <div>",
-      "    <slot/>",
-      "  </div>",
+      "  <div class=\"\"></div>",
       "</template>",
+      "",
+      "",
+      "<script>",
+      "export default {",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "",
+      "  methods: {},",
+      "}",
+      "</script>",
+      "",
+      "",
+      "<style lang=\"scss\" scoped></style>",
     ]
   },
-  "vue-template-ref": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "tref",
+  "vue3-template": {
+    "scope": "vue",
+    "prefix": "vue",
+		"description": "Vue3 Template",
     "body": [
-      "const ${1:el} = shallowRef<HTMLDivElement>()",
+      "<script setup lang=\"ts\">",
+      "import {} from 'vue'",
+      "",
+      "  const props = defineProps<{}>()",
+      "",
+      "  const emit = defineEmits<{}>()",
+      "</script>",
+      "",
+      "",
+      "<template>",
+      "  <div class=\"\"></div>",
+      "</template>",
+      "",
+      "",
+      "<style lang=\"scss\" scoped></style>",
     ]
   },
-  "vue-computed": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "com",
-    "body": [
-      "computed(() => { $1 })"
-    ]
-  },
-  "vue-watch-effect": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "watchE",
-    "body": [
-      "watchEffect(() => {",
-      "  $1",
-      "})"
-    ]
-  },
-  "if-vitest": {
+  "vue2-mixins": {
     "scope": "javascript,typescript",
-    "prefix": "ifv",
+    "prefix": "mixins",
+    "description": "Vue2 Mixins",
     "body": [
-      "if (import.meta.vitest) {",
-      "  const { describe, it, expect } = import.meta.vitest",
-      "  ${1}",
-      "}"
+      "export default {",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "",
+      "  methods: {},",
+      "}",
+    ]
+  },
+  "markdown-blog-template": {
+    "scope": "markdown",
+    "prefix": "md",
+    "description": "Blog Template",
+    "body": [
+      "---",
+      "title: ''",
+      "description: ''",
+      "---",
+      "",
+      ""
+    ]
+  },
+  "markdown-readme-template": {
+    "scope": "markdown",
+    "prefix": "md",
+    "description": "README Template",
+    "body": [
+      "<h1 align=\"center\">Welcome to X 👋</h1>",
+      "<p>",
+      "  <img alt=\"Version\" src=\"https://img.shields.io/badge/version-V1.0.0-blue.svg?cacheSeconds=2592000\" />",
+      "</p>",
+      "",
+      "> Description of the X",
+      "",
+      "### 🏠 [Homepage]()",
+      "",
+      "### ✨ [Demo]()",
+      "",
+      "## Install",
+      "",
+      "```sh",
+      "```",
+      "",
+      "## Usage",
+      "",
+      "```sh",
+      "```",
+      "",
+      "## Run tests",
+      "",
+      "```sh",
+      "```",
+      "",
+      "## 📝 License",
+      "",
+      "Copyright © 2024 []().<br />",
+      "This project is [MIT]() licensed."
     ]
   },
   "markdown-api-table": {
     "scope": "markdown",
-    "prefix": "table",
+    "prefix": "md",
+    "description": "Markdown Api Table",
     "body": [
       "<table>",
       "<tr>",
