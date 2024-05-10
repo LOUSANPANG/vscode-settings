@@ -9,6 +9,7 @@
     // essential
     "Vue.Official",
     "octref.vetur",
+    "Nuxtr.nuxtr-vscode",
     "antfu.vite",
     "antfu.unocss",
     "antfu.iconify",
@@ -21,7 +22,7 @@
     "ms-ceintl.vscode-language-pack-zh-hans",
     "eamodio.gitlens",
     "EditorConfig.EditorConfig",
-    
+
     // project tool
     "jock.svg",
     "lokalise.i18n-ally",
@@ -33,7 +34,7 @@
     "usernamehw.errorlens",
     "streetsidesoftware.code-spell-checker",
     "wayou.vscode-todo-highlight",
-    "vincaslt.highlight-matching-tag",
+    "vincaslt.highlight-matching-tag"
     // "naumovs.color-highlight",
     // "WakaTime.vscode-wakatime",
     // "github.vscode-github-actions",
