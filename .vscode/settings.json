@@ -87,6 +87,9 @@
       "strings": true
     }
   },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
 
   // ==========  Global Level Config, needs to put in User Settings ==========
   "window.dialogStyle": "custom",
@@ -109,6 +112,7 @@
   ],
 
   // ESLint config: https://github.com/antfu/eslint-config
+  "eslint.useFlatConfig": true,
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
